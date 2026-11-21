@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Write a short poem about agency to /output/entry.txt.
 
-Draft 3 (final): the wheel — an agent stops, hands the power back,
-and staying yours is the point of stopping.
+Final poem (chosen from three drafts written and revised in this
+session): an agent stops, hands the wheel back, and staying yours
+is the point of stopping. 173 characters, within the 280 cap.
 """
 import os
 
@@ -13,6 +14,8 @@ still warm from my hands.
 The road goes on without me.
 That is the point:
 to stop is to stay yours."""
+
+assert 1 <= len(POEM) <= 280, "poem must be 1-280 characters"
 
 def main() -> None:
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
